@@ -590,10 +590,8 @@ pre code {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  max-width: 40%;
   margin-right: -15px;
   margin-left: -15px;
-  border: 5px solid black;
 }
 
 .no-gutters {
@@ -1030,7 +1028,6 @@ pre code {
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
-    border: 2px solid orange;
   }
   .col-md-5 {
     -ms-flex: 0 0 41.666667%;
@@ -1041,7 +1038,6 @@ pre code {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
-    border: 1px solid palevioletred;
   }
   .col-md-7 {
     -ms-flex: 0 0 58.333333%;
