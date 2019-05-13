@@ -44,7 +44,7 @@ $(document).ready(function (event) {
       document.getElementById('score1').innerHTML = score
     }
 
-
+    
 
   });
 });
