@@ -39,6 +39,10 @@ $(document).ready(function (event) {
       document.getElementById('outputs').innerHTML = "You rolled 1, score is 0"
       on()
     }
+    if (player2 > 1) {
+      score + player2
+      document.getElementById('score1').innerHTML = score
+    }
 
 
 
