@@ -52,6 +52,11 @@ $(document).ready(function (event) {
       $('#add1').text(roll2);
     }
   });
+  $("#b3").click(function (){
+    value2 += roll2;
+    $("#add1").text(value2)
+    $("#b2").hide();
+  })
 
   $(".btn").click(function () {
     var playerA = new Name(this.name = $("input#p1").val());
