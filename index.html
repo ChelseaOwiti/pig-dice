@@ -13,51 +13,54 @@
 
   <link href="css/mdb.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
-  <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.4.0.js"></script>
   <script src="./js/scripts.js"></script>
 </head>
+
 <body class="text-center">
-    <h1 class="animated fadeIn mb-4"><strong>PIG DICE</strong></h1>
-    <div class="container">
-      <div class="card-group">
-        <div class="col-sm-6 card card-body white border-primary mb3">
-          <h2>PLAYER1</h2>
-          <form class="name">
-            <label>Enter name</label>
-            <input id="p1" type="text">
-          </form>
-        </div>
-        <div class="col-sm-6 card card-body white border-primary mb3">
-          <h2>Player 2</h2>
-          <form class="name">
-            <label>Enter name</label>
-            <input id="p2" type="text">
-          </form>
-        </div>
+  <h1 class="animated fadeIn mb-4"><strong>PIG DICE</strong></h1>
+  <div class="container">
+    <div class="card-group">
+      <div class="col-sm-6 card card-body border-primary mb3">
+        <h2>PLAYER1</h2>
+        <form class="name">
+          <label>Enter name</label>
+          <input id="p1" type="text">
+        </form>
       </div>
-      <div class="card-body"><button class="btn" type="button">START</button></div>
-      <img id="show" src="./images/peppa.png">
-      <div id="hidden"><p>Each player has their own turn and one cannot play if the other player is playing</p>
-        <p> You can either choose to roll the dice or hold. If you roll the dice and you land on 1 your score is zero</p>
-        <p> You can keep rolling the dice as long as you have not landed on</p></div>
-        <div class="card-group">
-          <div class="col-sm-6 card  border-danger mb3">
-            <h1>PLAYER 1</h1>
-            <p id="name"></p>
-            <p id="other"></p>
-            <button id="b" type="button">ROLL</button>
-            <button id="b1" type="button">HOLD</button>
-          </div>
-          <div class="col-sm-6 card border-danger mb3">
-            <h1>PLAYER 2</h1>
-            <p id="name1"></p>
-            <p id="other1"></p>
-            <button id="b2" type="button">ROLL</button>
-            <button id="b3" type="button">HOLD</button>
-          </div>
-        </div>
-        
+      <div class="col-sm-6 card card-body border-primary mb3">
+        <h2>Player 2</h2>
+        <form class="name">
+          <label>Enter name</label>
+          <input id="p2" type="text">
+        </form>
+      </div>
     </div>
+    <div class="card-body"><button class="btn" type="button">START</button></div>
+    <img id="show" src="./images/pig2.png">
+    <div id="hidden">
+      <p>Each player has their own turn and one cannot play if the other player is playing</p>
+      <p> You can either choose to roll the dice or hold. If you roll the dice and you land on 1 your score is zero</p>
+      <p> You can keep rolling the dice as long as you have not landed on 1</p>
+    </div>
+    <div class="card-group">
+      <div class="col-sm-6 card  border-danger mb3">
+        <h1>PLAYER 1</h1>
+        <p>NAME: <span id="name"></span></p>
+        <p>SCORE: <span id="score"></span></p>
+        <button id="b" type="button">ROLL</button>
+        <button id="b1" type="button">HOLD</button>
+      </div>
+      <div class="col-sm-6 card border-danger mb3">
+        <h1>PLAYER 2</h1>
+        <p>NAME: <span id="name1"></span></p>
+        <p>SCORE: <span id="score1"></span></p>
+        <button id="b2" type="button">ROLL</button>
+        <button id="b3" type="button">HOLD</button>
+      </div>
+    </div>
+
+  </div>
 
 
 </body>
