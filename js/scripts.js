@@ -9,6 +9,7 @@ function off(){
   document.getElementById('b2').disabled=true;
   document.getElementById('b').disabled=false;
 } 
+var score = 0
 }
 // user interface logic
 $(document).ready(function(event){
@@ -19,20 +20,17 @@ $(document).ready(function(event){
     document.getElementById('name').innerHTML = playerA.name
     document.getElementById('name1').innerHTML = playerB.name
   });
-  function functionA(){
-    var A = document.getElementById('score')
-    var AB = Math.floor(Math.random()*6)+1;
-    score.innerHTML = AB;
-  }
+  
+  
   $("#b").click(function(){
     var player1 = Math.ceil(Math.random()*6);
     if (player1 ===1){
       document.getElementById('output').innerHTML = "You rolled 1, score is 0"
       off()
     }
-   else if (player1 > 1){
-     on()
-    
+    if (player1 > 1){
+     score + player1
+    document.getElementById('score').innerHTML = score
     }
   })
 
