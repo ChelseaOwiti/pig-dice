@@ -4,3 +4,6 @@ body{
 .card{
   background-color: rgba(245, 245, 245, 0.1);
 }
+#hidden{
+  display: none;
+}

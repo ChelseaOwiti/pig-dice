@@ -13,6 +13,13 @@ function Name(name) {
 }
 // user interface logic
 $(document).ready(function (event) {
+  $("#showme").click(function(){
+    $("#show").toggle();
+    $("#hidden").toggle();
+  })
+
+
+
   $(".btn").click(function () {
     var playerA = new Name(this.name = $("input#p1").val());
     var playerB = new Name(this.name = $("input#p2").val());
@@ -44,7 +51,7 @@ $(document).ready(function (event) {
       document.getElementById('score1').innerHTML = score
     }
 
-    
+
 
   });
 });
