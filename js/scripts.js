@@ -5,8 +5,8 @@ function Name(name) {
 //buisness logic
 $(document).ready(function (event) {
   $("#showme").click(function () {
-    $("#show").toggle();
-    $("#hidden").toggle();
+    $("#show").slideToggle();
+    $("#hidden").slideToggle();
   });
 });
 
@@ -20,7 +20,7 @@ $(document).ready(function (event) {
   $("#b").click(function () {
     var randomNo = Math.floor(Math.random() * 6) + 1;
     if (randomNo === 1) {
-      alert("You rolled 1")
+      alert("You rolled 1, switch to next player")
       roll1 = 0;
       value1 += roll1
       $('#add').text(value1);
@@ -41,7 +41,7 @@ $(document).ready(function (event) {
   $("#b2").click(function(){
     var random = Math.floor(Math.random() * 6) + 1;
     if (random === 1){
-      alert("You rolled 1")
+      alert("You rolled 1, switch to next player")
       roll2 = 0;
       value2 += roll2
       $('#add1').text(value2);
