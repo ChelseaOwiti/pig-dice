@@ -10,15 +10,14 @@ function Name(name) {
     document.getElementById('b').disabled = false;
   }
   var score = 0
+  var answer = 0
 }
 // user interface logic
 $(document).ready(function (event) {
-  $("#showme").click(function(){
+  $("#showme").click(function () {
     $("#show").toggle();
     $("#hidden").toggle();
-  })
-
-
+  });
 
   $(".btn").click(function () {
     var playerA = new Name(this.name = $("input#p1").val());
@@ -32,23 +31,23 @@ $(document).ready(function (event) {
   $("#b").click(function () {
     var player1 = Math.ceil(Math.random() * 6);
     if (player1 === 1) {
-      document.getElementById('output').innerHTML = "You rolled 1, score is 0"
-      off()
+      document.getElementById('output').innerHTML = "You rolled 1, score is 0";
+      // off();
     }
     if (player1 > 1) {
-      score + player1
-      document.getElementById('score').innerHTML = score
+      var answer = score + player1;
+      document.getElementById('score').innerHTML = answer;
     }
   });
   $("#b2").click(function () {
     var player2 = Math.ceil(Math.random() * 6);
     if (player2 === 1) {
-      document.getElementById('outputs').innerHTML = "You rolled 1, score is 0"
-      on()
+      document.getElementById('outputs').innerHTML = "You rolled 1, score is 0";
+      // on()
     }
     if (player2 > 1) {
-      score + player2
-      document.getElementById('score1').innerHTML = score
+      var answer = score + player2;
+      document.getElementById('score1').innerHTML = answer;
     }
 
 
